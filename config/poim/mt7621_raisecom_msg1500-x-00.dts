@@ -166,7 +166,7 @@
 			full-duplex;
 		};
 	};
-
+};
 
 &state_default {
 	gpio {
