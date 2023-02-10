@@ -78,6 +78,7 @@ jobs:
         cp -f config/poim/include_target.mk immortalwrt/include/target.mk
         cp -f config/poim/mt7621non.mk immortalwrt/target/linux/ramips/image/mt7621.mk
         cp -f config/poim/mt7621_raisecom_msg1500-x-00.dts immortalwrt/target/linux/ramips/dts/mt7621_raisecom_msg1500-x-00.dts
+        cp -f config/poim/01_ledsnon immortalwrt/target/linux/ramips/mt7621/base-files/etc/board.d/01_leds
         cp -f config/poim/02_network immortalwrt/target/linux/ramips/mt7621/base-files/etc/board.d/02_network
         touch immortalwrt/target/linux/ramips/Makefile
         chmod +x $DIY_P2_SH
