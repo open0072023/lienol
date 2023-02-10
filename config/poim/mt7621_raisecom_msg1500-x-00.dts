@@ -112,6 +112,7 @@
 		compatible = "mediatek,mt76";
 		reg = <0x0000 0 0 0 0>;
 		mediatek,mtd-eeprom = <&factory 0x0>;
+		mtd-mac-address = <&factory 0x4>;
 		/* 5 GHz (phy1) does not take the address from calibration data,
 		   but setting it manually here works */
 		nvmem-cells = <&macaddr_factory_4>;
@@ -135,7 +136,9 @@
 	mtketh-wan = "eth1";
 	mtketh-ppd = "eth0";
 	mtketh-lan = "eth0";
+	ext-devices = "wlan0","wlan1","ra0", "rai0";
 	mtketh-max-gmac = <2>;
+        status = "okay";
 };
 
 &gsw {
