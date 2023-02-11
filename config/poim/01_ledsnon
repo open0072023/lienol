@@ -28,7 +28,7 @@ d-team,newifi-d2)
 	;;
 raisecom,msg1500-x-00)
 	ucidef_set_led_netdev "wlan2g" "WiFi 2.4GHz" "blue:wlan2g" "ra0"
-	ucidef_set_led_netdev "wlan5g" "WiFi 5GHz" "blue:wlan5g"  "rax0"
+	ucidef_set_led_netdev "wlan5g" "WiFi 5GHz" "blue:wlan5g" "rai0"
 	;;
 d-team,pbr-m1|\
 gehua,ghl-r-001|\
