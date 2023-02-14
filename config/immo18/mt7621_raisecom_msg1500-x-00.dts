@@ -127,14 +127,6 @@
 	status = "okay";
 };
 
-&hnat {
-	mtketh-wan = "eth1";
-	mtketh-ppd = "eth0";
-	mtketh-lan = "eth0";
-	mtketh-max-gmac = <2>;
-	/delete-property/ mtkdsa-wan-port;
-};
-
 &switch0 {
 	status = "disabled";
 };
