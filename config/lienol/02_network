@@ -61,10 +61,6 @@ ramips_setup_interfaces()
 	mikrotik,routerboard-760igs)
 		ucidef_set_interfaces_lan_wan "lan2 lan3 lan4 lan5" "wan sfp"
 		;;
-	raisecom,msg1500-x-00)
-		ucidef_add_switch "switch0" \
-			"0:lan:4" "1:lan:3" "2:lan:2" "3:lan:1" "4:wan:5" "6u@eth0" "5u@eth1"
-		;;
 	tplink,eap235-wall-v1)
 		ucidef_set_interface_lan "lan0 lan1 lan2 lan3"
 		;;
