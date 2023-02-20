@@ -25,6 +25,8 @@ DEFAULT_PACKAGES:=\
 	uci \
 	uclient-fetch \
 	urandom-seed \
+	luci luci-compat \
+	default-settings luci-app-upnp \
 	urngd
 
 ifneq ($(CONFIG_SELINUX),)
@@ -37,6 +39,7 @@ endif
 DEFAULT_PACKAGES.basic:=
 # For nas targets
 DEFAULT_PACKAGES.nas:=\
+	block-mount \
 	fdisk \
 	lsblk \
 	mdadm
